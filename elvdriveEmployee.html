@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELVDRIVE Employee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="h-screen w-full flex">
+      <!-- sidebar -->
+      <div class="w-[6vw] border-r-2 border-primary overflow-hidden">
+        <h1 class="my-5 text-center text-primary font-bold">ELVDRIVE</h1>
+
+        <div
+          class="flex flex-col justify-center h-full fixed fixed top-0 w-[4vw] overflow-hidden"
+        >
+          <div class="side-navbar h-[70vh]"></div>
+
+          <!-- side menu -->
+          <div
+            class="absolute flex flex-col justify-center items-center w-full gap-10"
+          >
+            <a href="/">
+              <img src="./public/images/home.svg" alt="home icon" />
+            </a>
+            <a href="/">
+              <img src="./public/images/stats.svg" alt="home icon" />
+            </a>
+            <a href="/">
+              <img src="./public/images/location.svg" alt="home icon" />
+            </a>
+            <a href="/">
+              <img src="./public/images/user.svg" alt="home icon" />
+            </a>
+            <a href="/">
+              <img src="./public/images/settings.svg" alt="home icon" />
+            </a>
+          </div>
+        </div>
+
+        <!-- ....end of sidebar....... -->
+      </div>
+
+      <!-- right section -->
+      <div class="w-full">
+        <!-- header section -->
+        <header
+          class="flex justify-between items-center border-b-2 border-primary p-5"
+        >
+          <h2 class="font-bold text-lg">ELVDRIVE Employee</h2>
+          <div class="flex items-center gap-2">
+            <img
+              src="./public/images/avatar.svg"
+              alt="user icon"
+              class="rounded-full h-10 bg-avatar"
+            />
+            <b>Hello, User</b>
+          </div>
+        </header>
+
+        <!-- top menu section  -->
+        <div>
+          <!-- upper section -->
+          <div class="flex justify-between p-5 items-center">
+            <div class="flex gap-5">
+              <p class="text-blueish underline">Core Team</p>
+              <b >ELVDRIVE Employee</b>
+            </div>
+
+            <!-- search box -->
+            <div
+              class="bg-light h-[4rem] w-[19.375rem] flex rounded-lg flex justify-center items-center gap-2 px-3"
+            >
+              <img src="./public/images/search.svg" alt="" />
+              <input
+                type="text"
+                placeholder="Search Employee"
+                class="bg-transparent flex-1 focus:outline-none"
+              />
+            </div>
+          </div>
+
+          <!-- lower section -->
+          <div class="flex p-5 justify-between text-lg p-5">
+            <div class="flex gap-16">
+              <!-- day/month -->
+              <div class="bg-light h-[4rem] w-[13rem] flex rounded-lg">
+                <button class="w-1/2 p-3 text-center  border-r-2 border-menu">Day</button>
+                <button class="w-1/2 p-3 text-center  border-r-2 border-menu">Month</button>
+                <button
+                  class="bg-primary w-1/2 p-3 text-center text-white rounded-r-lg"
+                >
+                  Year
+                </button>
+              </div>
+
+              <!-- duration -->
+              <div class="bg-light h-[4rem] w-[25rem] flex rounded-lg">
+                <button class="w-1/2 p-3 text-center border-r-2 border-menu">
+                  All
+                </button>
+                <button class="w-1/2 p-3 text-center border-r-2 border-menu">
+                  1D
+                </button>
+                <button class="w-1/2 p-3 text-center border-r-2 border-menu">
+                  1W
+                </button>
+                <button class="w-1/2 p-3 text-center  border-r-2 border-menu">1M</button>
+                <button
+                  class="bg-primary w-1/2 p-3 text-center text-white rounded-r-lg"
+                >
+                  3M
+                </button>
+              </div>
+            </div>
+
+            <!-- download button -->
+            <button
+              class="bg-light h-[4rem] w-[13.75rem] flex rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="./public/images/download.svg" alt="" />
+              Download Excel
+            </button>
+          </div>
+        </div>
+
+        <!-- data entry section -->
+        <div>
+          <!-- data header -->
+          <div class="flex justify-between p-5 items-center">
+            <h3 class="font-bold">Core Team Details</h3>
+
+            <!-- Calendar section -->
+            <div class="flex gap-7">
+              <div class="flex gap-2 items-center">
+                <p>From</p>
+                <input
+                  type="date"
+                  name="dateFrom"
+                  id="dateFrom"
+                  class="border border-black rounded p-1"
+                />
+              </div>
+
+              <div class="flex gap-2 items-center">
+                <p>To</p>
+                <input
+                  type="date"
+                  name="dateFrom"
+                  id="dateFrom"
+                  class="border border-black rounded p-1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- feed section -->
+          <table class="w-full my-5">
+            <tr class="flex justify-evenly">
+              <th>Linkedin Id</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Joining Date</th>
+            </tr>
+          </table>
+        </div>
+
+        <!-- ......right section ends here.............. -->
+      </div>
+    </div>
+  </body>
+</html>

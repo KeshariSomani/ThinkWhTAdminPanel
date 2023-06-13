@@ -1,0 +1,41 @@
+* {
+  font-family: 'Noto Sans';
+}
+
+/* text colors */
+.text-primary {
+  color: #275473;
+}
+
+.text-blueish {
+  color: #0962ea;
+}
+
+/* bg colors */
+.bg-primary {
+  background-color: #275473;
+}
+
+.bg-avatar {
+  background-color: #d9d9d9;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+}
+
+/* border colors */
+.border-primary {
+  border-color: #f4f4f4;
+}
+
+.border-menu {
+  border-color: #82e0f8;
+}
+
+/* sidebar styles */
+.side-navbar {
+  border-top: 5vw solid transparent;
+  border-left: 70px solid #275473;
+  border-bottom: 5vw solid transparent;
+}

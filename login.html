@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="loginStyle.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-screen">
+    <img src="./public/images/loginLogo.svg" alt="logo" class="mx-auto" />
+
+    <!-- login section -->
+    <div
+      class="mx-auto p-10 w-fit flex flex-col items-center gap-5 my-10"
+    >
+      <input
+        type="email"
+        name="empEmail"
+        placeholder="Email ID"
+        class="rounded-full w-[43rem] h-[3rem] px-3 focus:outline-none"
+      />
+      <input
+        type="text"
+        name="empID"
+        placeholder="Employee ID"
+        class="rounded-full w-[43rem] h-[3rem] px-3 focus:outline-none"
+      />
+      <div
+        class="rounded-full w-[43rem] h-[3rem] px-3 bg-white flex items-center justify-between"
+      >
+        <input
+          type="password"
+          id="password"
+          name="empPassword"
+          class="focus:outline-none bg-transparent flex-1 pr-3"
+          placeholder="Password"
+        />
+        <img
+          src="./public/images/showPass.png"
+          alt="show password icon"
+          class="w-[1.5rem] h-[1.5rem] cursor-pointer"
+          id="showPassword"
+          onclick="showPassword()"
+        />
+        <img
+          src="./public/images/hidePass.svg"
+          alt="hide password icon"
+          id="hidePassword"
+          class="w-[1.5rem] h-[1.3rem] cursor-pointer hidden"
+          onclick="hidePassword()"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="bg-[#1E1E1E] w-[30.5rem] h-[3rem] text-white rounded-full mt-5 focus:outline-none"
+      >
+        Login
+      </button>
+    </div>
+
+    <!-- js -->
+    <script>
+      const passwordInput = document.getElementById("password");
+      const showPasswordIcon = document.getElementById("showPassword");
+      const hidePasswordIcon = document.getElementById("hidePassword");
+
+      const showPassword = () => {
+        passwordInput.type = "text";
+        showPasswordIcon.style.display = "none";
+        hidePasswordIcon.style.display = "block";
+      };
+
+      const hidePassword = () => {
+        passwordInput.type = "password";
+        showPasswordIcon.style.display = "block";
+        hidePasswordIcon.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
